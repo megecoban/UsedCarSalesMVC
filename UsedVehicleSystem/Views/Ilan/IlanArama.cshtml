@@ -1,0 +1,9 @@
+﻿@{
+    var ilanlar = (List<Ilan>)ViewBag.Ilanlar;
+    var filtre = (Ilan)ViewBag.Filtre;
+
+    @foreach(var ilan in ilanlar)
+    {
+        <p>@ilan.ilanAdi - (@ilan.ilanFiyati)</p>
+    }
+}
